@@ -84,6 +84,8 @@ html.device-mobile-optimized.blockSiteScrolling > body {
 body.device-mobile-optimized {
   overflow-x: hidden;
   overflow-y: auto; }
+  body.device-mobile-optimized.legacy-body-overflow {
+    overflow-y: scroll; }
   body.device-mobile-optimized #SITE_CONTAINER {
     width: 320px;
     overflow-x: visible;
@@ -346,11 +348,11 @@ a.wixAppsLink img {
   border-color: transparent; }
 
 .transitioning-comp {
-  -webkit-transition-property: all;
-  transition-property: all; }
+  -webkit-transition-property: background-color, color !important;
+  transition-property: background-color, color !important; }
   .transitioning-comp * {
-    -webkit-transition: inherit;
-    transition: inherit; }
+    -webkit-transition: inherit !important;
+    transition: inherit !important; }
 
 .selectionSharerContainer {
   position: absolute;
