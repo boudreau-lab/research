@@ -79,7 +79,8 @@ html.device-mobile-optimized.device-android {
   margin-bottom: 1px; }
 
 html.device-mobile-optimized.blockSiteScrolling > body {
-  position: fixed; }
+  position: fixed;
+  width: 100%; }
 
 body.device-mobile-optimized {
   overflow-x: hidden;
